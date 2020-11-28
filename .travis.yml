@@ -6,3 +6,4 @@ script:
     - ./configure
     - make
     - make all
+    - make check
