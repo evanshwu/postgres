@@ -5,4 +5,3 @@ script:
     - sudo apt-get update
     - rm -rf build_dir && mkdir -p build_dir && cd build_dir && ../configure
     - make -j 40 world
-    - make -j 40 check-world
