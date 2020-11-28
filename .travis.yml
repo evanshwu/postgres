@@ -1,7 +1,9 @@
 language: c
 os: linux
 
-before_install:
+script:
+    - sudo apt-get update
+    - sudo apt-get -y install make tar readline readline-devel zlib
     - ./configure
     - make
-    - make install
+    - make all
