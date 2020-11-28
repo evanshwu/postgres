@@ -4,7 +4,6 @@ os: linux
 before_install:
     - ./configure
     - make
-    - su
     - make install
     - adduser postgres
     - mkdir /usr/local/pgsql/data
