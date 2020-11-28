@@ -3,6 +3,5 @@ os: linux
 
 script:
     - sudo apt-get update
-    - sudo apt-get install -y libxml2
-    - rm -rf build_dir && mkdir -p build_dir && cd build_dir && ../configure
+    - ./configure
     - make -j 40 world
