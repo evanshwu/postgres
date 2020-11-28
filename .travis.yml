@@ -3,7 +3,7 @@ os: linux
 
 script:
     - sudo apt-get update
-    - sudo apt-get -y install make tar readline readline-devel zlib
+    - sudo apt-get -y install make tar libreadline7 libreadline7-dbg zlib
     - ./configure
     - make
     - make all
