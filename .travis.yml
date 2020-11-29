@@ -2,6 +2,7 @@ language: c
 os: linux
 
 script:
+    - sudo apt-get install -y libxml2-utils
     - rm -rf build_dir
     - ./configure
     - make
