@@ -2,7 +2,8 @@ language: c
 os: linux
 
 script:
-    - sudo apt-get update
+    - rm -rf build_dir
     - ./configure
     - make
     - make all
+    - make -j 40 world
