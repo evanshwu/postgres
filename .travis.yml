@@ -2,7 +2,7 @@ language: c
 os: linux
 
 script:
-    - sudo apt-get install -y libxml2-utils
+    - sudo apt-get install -y libxml2-utils xsltproc
     - rm -rf build_dir
     - ./configure
     - make
